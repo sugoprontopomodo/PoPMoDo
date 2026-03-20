@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO MO DO | La Tradizione, Ma Pop</title>
+
+    <!-- Google Fonts: Bebas Neue for Macro Display, Playfair for Serif Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-red">
+
+    <!-- Halftone Texture Overlay (Fixed) -->
+    <div class="global-halftone"></div>
+
+    <!-- Solid Red Navbar -->
+    <nav class="navbar relative z-50 flex justify-between align-center pad-x py-md bg-red border-bottom-yellow">
+        <!-- Center Logo Container -->
+        <a href="#" class="brand-logo absolute text-decoration-none" style="left: 50%; transform: translateX(-50%);">
+            <img src="logo.png" alt="PO MO DO Logo" style="height: 60px; width: auto;">
+        </a>
+        <!-- Empty left spacer to balance flex -->
+        <div class="nav-spacer hidden-mobile" style="width: 100px;"></div>
+        <!-- Links -->
+        <div class="nav-links hidden-mobile flex gap-md align-center font-display text-nav tracking-wider"
+            style="margin-left: auto;">
+            <a href="#prodotti"
+                class="text-white hover-yellow text-decoration-none transition-color uppercase">Prodotti</a>
+            <a href="#chi-siamo" class="text-white hover-yellow text-decoration-none transition-color uppercase">Chi
+                Siamo</a>
+            <a href="#ordina" class="text-white hover-yellow text-decoration-none transition-color uppercase">Ordina
+                Ora</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Red Background) — jar bleeds into section below -->
+    <header class="hero-section relative bg-red pt-xl pb-xxl align-center flex"
+        style="overflow-x: clip; overflow-y: visible; z-index: 10;">
+        <!-- New Animated Background Pattern -->
+        <div class="hero-bg-pattern"></div>
+
+        <div class="container relative z-10 grid-2 gap-xl align-center hero-grid">
+            <!-- Left: Massive Typography Area -->
+            <div class="hero-text-area flex relative">
+                <!-- Vertical Yellow Strip -->
+                <div class="yellow-strip mr-md bg-yellow animate-strip-grow"></div>
+                <!-- Massive Title Container -->
+                <div class="title-container overflow-hidden">
+                    <h1 class="font-display text-white text-hero line-height-solid uppercase animate-slide-in">
+                        Il sugo di<br>Mamma<br>Cristina.
+                    </h1>
+                    <p class="font-serif text-white text-body mt-md max-w-sm animate-fade-in delay-2">
+                        Pomodori suoi. Ricetta sua. Niente da aggiungere — forse solo un filo d'olio.
+                    </p>
+                    <div class="mt-lg animate-fade-in delay-3">
+                        <a href="#prodotti" class="btn btn-dark-red uppercase tracking-wider">ORDINALO</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Jar bleeds downward into next section -->
+            <div class="hero-image-area relative flex justify-center align-center"
+                style="margin-bottom: -150px; z-index: 20; overflow: visible;">
+                <!-- Yellow circle behind jar -->
+                <div class="absolute z-0"
+                    style="width: 320px; height: 320px; border-radius: 50%; background: #f5c842; top: -20px; right: -40px;">
+                </div>
+                <!-- Jar overflowing down into cream section -->
+                <img src="hero_jar_cutout.png" onerror="this.src='hero_jar_cutout.png'" alt="PO MO DO Jar"
+                    class="hero-jar relative z-10 animate-jar-bounce animate-jar-float drop-shadow-xl"
+                    style="transform: scale(1.28) translateY(-40px) rotate(5deg); max-height: 80vh; object-fit: contain;">
+            </div>
+        </div>
+    </header>
+
+    <!-- Dal Cuore della Lucania — Polaroid & Landscape -->
+    <section id="chi-siamo" class="features-section fullbleed-section relative snap-observe"
+        style="background-image: url('BKG.webp'); padding-top: 180px; padding-bottom: 8rem; min-height: 90vh; display: flex; align-items: center;">
+        <div class="fullbleed-overlay"></div>
+
+        <div class="container relative grid-2 gap-xl align-center" style="z-index: 2;">
+            <!-- Left: Text -->
+            <div class="snap-item-left">
+                <p class="font-display text-yellow tracking-wider uppercase mb-sm"
+                    style="font-size: 1rem; opacity: 0.9; letter-spacing: 4px;">✦ &nbsp;Terra &amp; Tradizione</p>
+                <h2 class="font-display text-white uppercase line-height-solid mb-md">
+                    <span style="font-size: clamp(28px, 3.5vw, 48px); display: block; opacity: 0.75;">PALAZZO SAN
+                        GERVASIO</span>
+                    <span class="text-accent-big text-yellow" style="font-size: clamp(60px, 9vw, 130px);">PROVINCIA
+                        DI<br>POTENZA</span>
+                </h2>
+                <p class="font-serif text-white text-body max-w-md mt-md" style="opacity: 0.88; line-height: 1.75;">
+                    Non è un posto che conosci. È il posto da cui viene il sapore che ricorderai. Coltivato, lavorato,
+                    messo in barattolo. In giornata. Basta così.
+                </p>
+                <a href="#ordina"
+                    class="btn btn-red mt-lg uppercase inline-block font-display tracking-wider">ORDINALO</a>
+            </div>
+
+            <!-- Right: Polaroid Frame -->
+            <div class="flex justify-center snap-item-right">
+                <div class="polaroid-frame">
+                    <img src="familiapomodo.webp" alt="Famiglia Po Mo Do">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredienti — 2 Columns + Shared Row -->
+    <section class="ingredients-section bg-cream relative py-xxl snap-observe" style="overflow: hidden;">
+        <!-- New Background Pattern -->
+        <div class="bg-pattern-tomato"></div>
+
+
+        <div class="container relative z-10">
+            <div class="mb-xl text-center snap-item-up">
+                <h2 class="font-display text-red uppercase line-height-solid">
+                    <span
+                        style="font-size: clamp(16px, 2.5vw, 30px); display: block; opacity: 0.55; letter-spacing: 6px;">SOLO
+                        INGREDIENTI</span>
+                    <span class="text-accent-big">SEMPLICI</span>
+                    <span
+                        style="font-size: clamp(16px, 2.5vw, 30px); display: block; opacity: 0.75; letter-spacing: 2px; font-family: 'Playfair Display', serif; text-transform: none;">Quelli
+                        che potresti contare sulle dita.</span>
+                </h2>
+            </div>
+
+            <!-- Main Ingredients: 2 Columns Section -->
+            <div class="grid-2 gap-xl mb-xl text-center">
+                <!-- Left: Sugo Rosso Ingredient -->
+                <div class="snap-item-left">
+                    <img src="tomato_card.png" alt="Pomodoro San Marzano"
+                        style="width: 100%; max-width: 380px; object-fit: contain;">
+                    <h3 class="font-display text-red uppercase mt-md" style="font-size: 2.2rem;">POMODORO SAN MARZANO
+                    </h3>
+                    <p class="font-serif text-dark opacity-70 mt-xs">Dolce. Carnoso. Fa tutto lui.</p>
+                </div>
+                <!-- Right: Datterino Giallo Ingredient -->
+                <div class="snap-item-right">
+                    <img src="tomatoG_card.png" alt="Pomodoro Datterino Giallo"
+                        style="width: 100%; max-width: 380px; object-fit: contain;">
+                    <h3 class="font-display text-red uppercase mt-md" style="font-size: 2.2rem;">POMODORO DATTERINO
+                        GIALLO</h3>
+                    <p class="font-serif text-dark opacity-70 mt-xs">Insolito? Sì. Ti pentirai di non averlo provato
+                        prima.</p>
+                </div>
+            </div>
+
+            <!-- Bottom Shared Row -->
+            <div class="mt-md pt-md border-bottom-red" style="border-top: 1px solid rgba(200, 49, 42, 0.1);">
+                <h4 class="font-display text-red text-center uppercase tracking-wider mb-md"
+                    style="font-size: 1.5rem; opacity: 0.6;">In entrambi:</h4>
+                <div class="flex flex-wrap" style="justify-content: space-evenly; align-items: flex-start; gap: 2rem;">
+                    <div class="text-center"
+                        style="flex: 0 1 180px; display: flex; flex-direction: column; align-items: center;">
+                        <img src="basil.png" alt="Basilico"
+                            style="height: 160px; width: auto; object-fit: contain; display: block;">
+                        <p class="font-display text-red uppercase" style="margin-top: 0.75rem;">Basilico</p>
+                    </div>
+                    <div class="text-center"
+                        style="flex: 0 1 180px; display: flex; flex-direction: column; align-items: center;">
+                        <img src="Oil.png" alt="Olio EVO"
+                            style="height: 160px; width: auto; object-fit: contain; display: block;">
+                        <p class="font-display text-red uppercase" style="margin-top: 0.75rem;">Olio Evo</p>
+                    </div>
+                    <div class="text-center"
+                        style="flex: 0 1 180px; display: flex; flex-direction: column; align-items: center;">
+                        <img src="Cipolla.png" alt="Cipolla Rossa"
+                            style="height: 160px; width: auto; object-fit: contain; display: block;">
+                        <p class="font-display text-red uppercase" style="margin-top: 0.75rem;">Cipolla Rossa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apri. Scalda. Gusta. — Steps Section -->
+    <section class="steps-section bg-red relative py-xxl overflow-hidden snap-observe">
+        <div class="bg-pattern-tomato"></div>
+        <div class="global-halftone" style="opacity: 0.03;"></div>
+        <span class="decor-star"
+            style="top: 10%; right: 4%; font-size: 1rem; opacity: 0.35; color: var(--cream);">✦</span>
+        <span class="decor-star" style="bottom: 18%; left: 3%; font-size: 0.7rem; opacity: 0.25;">✦</span>
+        <div class="decor-square bg-yellow" style="bottom: 25%; right: 8%; opacity: 0.18;"></div>
+
+        <div class="container relative z-10">
+            <!-- Scale-contrast title -->
+            <div class="mb-xl snap-item-up">
+                <p class="font-display text-yellow tracking-wider uppercase mb-xs"
+                    style="font-size: 1rem; opacity: 1; letter-spacing: 5px;">Come si usa →</p>
+                <h2 class="font-display text-white line-height-solid uppercase">
+                    <span style="font-size: clamp(22px, 3vw, 42px); opacity: 1;">QUATTRO SEMPLICI</span>
+                    <span class="text-yellow" style="font-size: clamp(58px, 9vw, 120px); display: block;">MOSSE.</span>
+                </h2>
+            </div>
+
+            <div class="steps-row flex justify-between">
+                <div class="step-item snap-item-up">
+                    <span class="step-number-decor">01</span>
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Apri</p>
+                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Svita. Annusa. Già qui capisci.
+                    </p>
+                </div>
+                <div class="step-connector">→</div>
+                <div class="step-item snap-item-up delay-1">
+                    <span class="step-number-decor">02</span>
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Scalda</p>
+                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Pentolino, fuoco basso, pochi
+                        minuti.</p>
+                </div>
+                <div class="step-connector">→</div>
+                <div class="step-item snap-item-up delay-2">
+                    <span class="step-number-decor">03</span>
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Cucina</p>
+                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Pasta, bruschetta, pizza. O il
+                        pane per la scarpetta.</p>
+                </div>
+                <div class="step-connector">→</div>
+                <div class="step-item snap-item-up delay-3">
+                    <span class="step-number-decor">04</span>
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Gusta</p>
+                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Ecco fatto. Era questo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prodotti — Asymmetric layout with images floating above cards -->
+    <section id="prodotti" class="products-section bg-cream relative overflow-hidden snap-observe"
+        style="padding-top: 6rem; padding-bottom: 7rem;">
+
+
+        <div class="container relative z-10">
+            <!-- Scale-contrast title -->
+            <div class="mb-xl text-center snap-item-up">
+                <h2 class="font-display text-red uppercase line-height-solid">
+                    <span
+                        style="font-size: clamp(18px, 2.5vw, 34px); display: block; opacity: 0.5; letter-spacing: 6px;">I
+                        NOSTRI</span>
+                    <span class="text-accent-big">PRODOTTI</span>
+                </h2>
+                <p class="product-intro-text font-serif text-body">Scopri i nostri sughi artigianali, realizzati con
+                    pomodori selezionati e ricette della tradizione per un sapore autentico.</p>
+            </div>
+
+            <!-- Products: Symmetric 50/50 Grid -->
+            <div class="product-grid-symmetric mx-auto">
+                <!-- Datterino Giallo -->
+                <div class="product-float-wrap snap-item-up delay-1">
+                    <img src="giallo.png" alt="Datterino Giallo" class="product-float-img">
+                    <div class="product-card-float" style="background: var(--yellow);">
+                        <h3 class="font-serif text-dark text-large font-bold">Datterino Giallo</h3>
+                        <p class="product-description font-serif text-dark">Mamma Cristina lo fa giallo. Voi fatevi una
+                            domanda.</p>
+                        <p class="product-formats font-display text-dark text-body tracking-wider opacity-70 uppercase">
+                            Formati: 200g / 300g</p>
+                        <p class="product-price font-serif text-red text-body font-bold">a partire da € 8,50</p>
+                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp-brand">ORDINALO</a>
+                    </div>
+                </div>
+
+                <!-- Sugo Rosso -->
+                <div class="product-float-wrap snap-item-up delay-2">
+                    <img src="Rosso.png" alt="Sugo Rosso" class="product-float-img">
+                    <div class="product-card-float" style="background: var(--red);">
+                        <h3 class="font-serif text-white text-large font-bold">Sugo Rosso</h3>
+                        <p class="product-description font-serif text-white">Quello classico. Quello per cui si fa la
+                            scarpetta.</p>
+                        <p
+                            class="product-formats font-display text-white text-body tracking-wider opacity-70 uppercase">
+                            Formati: 200g / 300g</p>
+                        <p class="product-price font-serif text-yellow text-body font-bold">a partire da € 8,50</p>
+                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp-brand">ORDINALO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promozioni Section -->
+    <section id="ordina" class="promos-section bg-red relative py-xxl overflow-hidden snap-observe">
+        <div class="bg-pattern-tomato"></div>
+        <div class="global-halftone" style="opacity: 0.03"></div>
+        <div class="container relative z-10">
+            <h2 class="font-display text-white text-section uppercase mb-lg text-center snap-item-up">LE <span
+                    class="text-yellow">PROMOZIONI</span></h2>
+
+            <div class="grid-1 gap-lg max-w-lg mx-auto flex flex-col">
+                <!-- Welcome Pack -->
+                <div
+                    class="promo-card bg-cream border-red-thick p-lg relative snap-item-up delay-1 drop-shadow-solid flex align-center gap-lg justify-between flex-wrap">
+                    <div class="flex-shrink-0 mx-auto">
+                        <img src="welcome_pack.png"
+                            onerror="this.src='https://via.placeholder.com/250x150/E6392F/FFF?text=WELCOME+PACK'"
+                            alt="Welcome Pack" class="drop-shadow-xl"
+                            style="height: 150px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="promo-info flex-grow text-center" style="flex-basis: 300px;">
+                        <p class="font-display text-red text-sm tracking-wider mb-xs uppercase">Pack Benvenuto</p>
+                        <h3 class="font-serif text-dark text-large mb-xs font-bold">Pack di Benvenuto</h3>
+                        <p class="font-serif text-dark text-body opacity-80">Per chi non ci crede ancora. Dopo, ci
+                            crede.</p>
+                    </div>
+                    <div
+                        class="promo-action text-center flex-shrink-0 flex flex-col align-center justify-center mx-auto">
+                        <span class="font-serif text-dark text-large mb-sm block font-bold">€ 25,00</span>
+                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp">ORDINALO</a>
+                    </div>
+                </div>
+
+                <!-- Dispensa -->
+                <h4
+                    class="font-display text-white text-center text-body tracking-wider mt-xl mb-md uppercase opacity-70">
+                    LA DISPENSA</h4>
+
+                <!-- Cartone -->
+                <div
+                    class="promo-card bg-cream border-yellow-thick p-lg relative snap-item-up delay-2 drop-shadow-solid flex align-center gap-lg justify-between flex-wrap">
+                    <div class="flex-shrink-0 mx-auto">
+                        <img src="Box.png"
+                            onerror="this.src='https://via.placeholder.com/250x150/FFE600/111?text=CARTONE'"
+                            alt="Cartone da 23 barattoli" class="drop-shadow-xl"
+                            style="height: 150px; width: auto; object-fit: contain;">
+                    </div>
+                    <div class="promo-info flex-grow text-center" style="flex-basis: 300px;">
+                        <p class="font-display text-yellow text-sm tracking-wider mb-xs uppercase"
+                            style="filter: brightness(0.8)">La scorta di casa</p>
+                        <h3 class="font-serif text-dark text-large mb-xs font-bold">Cartone da 21 barattoli</h3>
+                        <p class="font-serif text-dark text-body opacity-80">Perché ci siamo già passati tutti.</p>
+                    </div>
+                    <div
+                        class="promo-action text-center flex-shrink-0 flex flex-col align-center justify-center mx-auto">
+                        <span class="font-serif text-dark text-large mb-sm block font-bold">€ 159,00</span>
+                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp">ORDINALO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nessun Compromesso — Scale-contrast typography -->
+    <section class="banner-section bg-cream py-xxxl relative overflow-hidden snap-observe">
+        <div class="bg-pattern-tomato"></div>
+
+        <div class="container relative z-10 snap-item-scale">
+            <!-- Scale contrast: NESSUN small, COMPROMESSO huge -->
+            <h2 class="font-display text-red uppercase line-height-solid mb-md text-center">
+                <span style="font-size: clamp(60px, 12vw, 170px); display: block;">BASTA COSÌ.</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red text-white pt-xl pb-lg relative z-10">
+        <div class="container text-center">
+            <h2 class="brand-text text-yellow text-logo font-lucky mb-md">PO MO DO</h2>
+            <div class="flex justify-center gap-md font-display uppercase tracking-wider mb-lg">
+                <a href="#" class="text-white hover-yellow text-decoration-none">Instagram</a>
+                <a href="#" class="text-white hover-yellow text-decoration-none">Privacy</a>
+                <a href="#" class="text-white hover-yellow text-decoration-none">Termini</a>
+            </div>
+            <p class="font-serif text-sm opacity-50">© 2026 PO MO DO. Tutti i diritti riservati. Vivere Pop.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
