@@ -1260,6 +1260,11 @@ body {
         gap: 6rem;
     }
 
+    .banner-section {
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+    }
+
     /* Mobile Tab Bar */
     .mobile-tab-bar {
         position: fixed;
