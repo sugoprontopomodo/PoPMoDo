@@ -570,6 +570,9 @@ body {
 .btn-yellow {
     background-color: var(--yellow);
     color: var(--dark);
+    border-radius: 50px;
+    letter-spacing: 0.1em;
+    padding: 16px 40px;
 }
 
 .btn-red {
@@ -928,8 +931,9 @@ body {
     }
 
     .text-hero {
-        font-size: clamp(32px, 10vw, 42px) !important;
+        font-size: clamp(48px, 14vw, 70px) !important;
         margin-bottom: 0.5rem;
+        letter-spacing: -2px;
     }
 
     .text-body {
@@ -959,6 +963,7 @@ body {
         height: 180px !important;
         right: 0 !important;
         left: 50% !important;
+        top: 60px !important;
         transform: translateX(-50%) !important;
     }
 
