@@ -897,22 +897,60 @@ body {
         display: none !important;
     }
 
+    .navbar {
+        display: none !important;
+    }
+
+    .hero-section {
+        height: 100svh;
+        min-height: 100svh;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
     .hero-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        height: 100% !important;
         text-align: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
-    .title-container {
-        width: 100%;
+    .hero-text-area {
+        flex: 0 0 auto;
+        justify-content: center;
     }
 
-    .yellow-strip {
-        display: none;
+    .text-hero {
+        font-size: clamp(40px, 12vw, 60px);
     }
 
     .hero-image-area {
-        height: 60vh;
-        margin-top: 2rem;
+        flex: 1;
+        height: auto;
+        margin-top: 1rem;
+        margin-bottom: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-jar {
+        max-height: 45vh !important;
+        transform: scale(1.1) rotate(5deg) !important;
+    }
+
+    .hero-image-area .absolute[style*="width: 320px"] {
+        width: 220px !important;
+        height: 220px !important;
+        right: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
     }
 
     /* Make typography aggressive but readable on mobile */
@@ -1206,6 +1244,71 @@ body {
     .product-grid-symmetric {
         grid-template-columns: 1fr;
         gap: 6rem;
+    }
+
+    /* Mobile Tab Bar */
+    .mobile-tab-bar {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 12px 10px;
+        border-radius: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .tab-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #8E8E93;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        flex: 1;
+    }
+
+    .tab-icon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 22px;
+        margin-bottom: 4px;
+        transition: all 0.3s ease;
+    }
+
+    .tab-item.active {
+        color: var(--red);
+    }
+
+    .tab-item.active .tab-icon {
+        background-color: var(--red);
+        color: var(--white);
+        box-shadow: 0 4px 12px rgba(200, 49, 42, 0.3);
+    }
+
+    .tab-item span {
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile-tab-bar {
+        display: none;
     }
 }
 

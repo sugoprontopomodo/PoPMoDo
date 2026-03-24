@@ -51,8 +51,6 @@
         <div class="container relative z-10 grid-2 gap-xl align-center hero-grid">
             <!-- Left: Massive Typography Area -->
             <div class="hero-text-area flex relative">
-                <!-- Vertical Yellow Strip -->
-                <div class="yellow-strip mr-md bg-yellow animate-strip-grow"></div>
                 <!-- Massive Title Container -->
                 <div class="title-container overflow-hidden">
                     <h1 class="font-display text-white text-hero line-height-solid uppercase animate-slide-in">
@@ -184,7 +182,7 @@
     </section>
 
     <!-- Apri. Scalda. Gusta. — Steps Section -->
-    <section class="steps-section bg-red relative py-xxl overflow-hidden snap-observe">
+    <section id="istruzioni" class="steps-section bg-red relative py-xxl overflow-hidden snap-observe">
         <div class="bg-pattern-tomato"></div>
         <div class="global-halftone" style="opacity: 0.03;"></div>
         <span class="decor-star"
@@ -366,6 +364,42 @@
             <p class="font-serif text-sm opacity-50">© 2026 PO MO DO. Tutti i diritti riservati. Vivere Pop.</p>
         </div>
     </footer>
+
+    <!-- Mobile Tab Bar (Bottom Navigation) -->
+    <nav class="mobile-tab-bar">
+        <a href="#chi-siamo" class="tab-item">
+            <div class="tab-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                </svg>
+            </div>
+            <span>Chi siamo</span>
+        </a>
+        <a href="#istruzioni" class="tab-item">
+            <div class="tab-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
+                </svg>
+            </div>
+            <span>Istruzioni</span>
+        </a>
+        <a href="#prodotti" class="tab-item">
+            <div class="tab-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" />
+                </svg>
+            </div>
+            <span>Prodotti</span>
+        </a>
+        <a href="#ordina" class="tab-item">
+            <div class="tab-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+            </div>
+            <span>Promozioni</span>
+        </a>
+    </nav>
 
     <script src="script.js"></script>
 </body>
