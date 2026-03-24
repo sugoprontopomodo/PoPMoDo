@@ -1278,6 +1278,10 @@ body {
         font-size: 1.2rem !important;
     }
 
+    .ingredients-main-grid p {
+        display: none !important;
+    }
+
     .ingredients-shared-row {
         flex-wrap: nowrap !important;
         gap: 0.5rem !important;
