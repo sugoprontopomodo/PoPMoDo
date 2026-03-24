@@ -1342,21 +1342,18 @@ body {
         flex: 0 0 100% !important;
     }
 
-    /* Mobile Arrows */
-    .step-item:not(:last-child)::after {
+    /* Mobile Arrows (Horizontal only for 1->2 and 3->4) */
+    .step-item:nth-child(1)::after,
+    .step-item:nth-child(3)::after {
+        content: '→' !important;
         font-size: 1.2rem !important;
         top: 2rem !important;
         right: -15% !important;
     }
 
-    /* 2 to 3 Diagonal Arrow */
-    .step-item:nth-child(2)::after {
-        content: '↙' !important;
-        right: 40% !important;
-        top: 100% !important;
-        transform: translateY(10px) rotate(15deg);
-        opacity: 0.4 !important;
-        font-size: 1.8rem !important;
+    .step-item:nth-child(2)::after,
+    .step-item:nth-child(4)::after {
+        display: none !important;
     }
 
     /* Hide 3 to 4 connector on mobile or reposition? No, 3 to 4 is horizontal. 
