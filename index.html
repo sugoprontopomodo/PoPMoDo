@@ -14,6 +14,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="fav_icon.png">
 </head>
 
 <body class="bg-red">
@@ -32,11 +33,11 @@
         <!-- Links -->
         <div class="nav-links hidden-mobile flex gap-md align-center font-display text-nav tracking-wider"
             style="margin-left: auto;">
-            <a href="#prodotti"
-                class="text-white hover-yellow text-decoration-none transition-color uppercase">Prodotti</a>
             <a href="#chi-siamo" class="text-white hover-yellow text-decoration-none transition-color uppercase">Chi
                 Siamo</a>
-            <a href="#ordina" class="text-white hover-yellow text-decoration-none transition-color uppercase">Ordina
+            <a href="#ingredienti" class="text-white hover-yellow text-decoration-none transition-color uppercase">Ingredienti</a>
+            <a href="#prodotti" class="text-white hover-yellow text-decoration-none transition-color uppercase">Prodotti</a>
+            <a href="#ordina" class="text-yellow hover-yellow text-decoration-none transition-color uppercase">Ordina
                 Ora</a>
         </div>
     </nav>
@@ -61,7 +62,7 @@
                         Pomodori suoi. Ricetta sua. Niente da aggiungere — forse solo un filo d'olio.
                     </p>
                     <div class="mt-lg animate-fade-in delay-3">
-                        <a href="#prodotti" class="btn btn-dark-red uppercase tracking-wider">ORDINALO</a>
+                        <a href="#prodotti" class="btn btn-dark-red uppercase tracking-wider">PROVALO</a>
                     </div>
                 </div>
             </div>
@@ -101,8 +102,8 @@
                     Non è un posto che conosci. È il posto da cui viene il sapore che ricorderai. Coltivato, lavorato,
                     messo in barattolo. In giornata. Basta così.
                 </p>
-                <a href="#ordina"
-                    class="btn btn-red mt-lg uppercase inline-block font-display tracking-wider">ORDINALO</a>
+                <a href="https://www.instagram.com/po_mo_do/"
+                    class="btn btn-red mt-lg uppercase inline-block font-display tracking-wider" target="_blank">SEGUICI</a>
             </div>
 
             <!-- Right: Polaroid Frame -->
@@ -115,7 +116,7 @@
     </section>
 
     <!-- Ingredienti — 2 Columns + Shared Row -->
-    <section class="ingredients-section bg-cream relative py-xxl snap-observe" style="overflow: hidden;">
+    <section id="ingredienti" class="ingredients-section bg-cream relative py-xxl snap-observe" style="overflow: hidden;">
         <!-- New Background Pattern -->
         <div class="bg-pattern-tomato"></div>
 
@@ -155,7 +156,7 @@
             </div>
 
             <!-- Bottom Shared Row -->
-            <div class="mt-md pt-md border-bottom-red" style="border-top: 1px solid rgba(200, 49, 42, 0.1);">
+            <div class="mt-md pt-md" style="border-top: 1px solid rgba(200, 49, 42, 0.1);">
                 <h4 class="font-display text-red text-center uppercase tracking-wider mb-md"
                     style="font-size: 1.5rem; opacity: 0.6;">In entrambi:</h4>
                 <div class="flex flex-wrap" style="justify-content: space-evenly; align-items: flex-start; gap: 2rem;">
@@ -193,7 +194,7 @@
 
         <div class="container relative z-10">
             <!-- Scale-contrast title -->
-            <div class="mb-xl snap-item-up">
+            <div class="mb-md snap-item-up">
                 <p class="font-display text-yellow tracking-wider uppercase mb-xs"
                     style="font-size: 1rem; opacity: 1; letter-spacing: 5px;">Come si usa →</p>
                 <h2 class="font-display text-white line-height-solid uppercase">
@@ -204,30 +205,31 @@
 
             <div class="steps-row flex justify-between">
                 <div class="step-item snap-item-up">
-                    <span class="step-number-decor">01</span>
-                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Apri</p>
-                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Svita. Annusa. Già qui capisci.
+                    <img src="icon_apri.png" alt="Apri" class="step-icon">
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">
+                        <span class="text-yellow" style="font-size: 2.2rem; margin-right: 0.2rem;">1.</span> Apri
                     </p>
                 </div>
                 <div class="step-connector">→</div>
                 <div class="step-item snap-item-up delay-1">
-                    <span class="step-number-decor">02</span>
-                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Scalda</p>
-                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Pentolino, fuoco basso, pochi
-                        minuti.</p>
+                    <img src="icon_scalda.png" alt="Scalda" class="step-icon">
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">
+                        <span class="text-yellow" style="font-size: 2.2rem; margin-right: 0.2rem;">2.</span> Scalda
+                    </p>
                 </div>
                 <div class="step-connector">→</div>
                 <div class="step-item snap-item-up delay-2">
-                    <span class="step-number-decor">03</span>
-                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Cucina</p>
-                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Pasta, bruschetta, pizza. O il
-                        pane per la scarpetta.</p>
+                    <img src="icon_condisci.png" alt="Condisci" class="step-icon">
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">
+                        <span class="text-yellow" style="font-size: 2.2rem; margin-right: 0.2rem;">3.</span> Condisci
+                    </p>
                 </div>
                 <div class="step-connector">→</div>
                 <div class="step-item snap-item-up delay-3">
-                    <span class="step-number-decor">04</span>
-                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">Gusta</p>
-                    <p class="font-serif text-white text-body" style="opacity: 0.75;">Ecco fatto. Era questo.</p>
+                    <img src="icon_gusta.png" alt="Gusta" class="step-icon">
+                    <p class="font-display text-white uppercase mb-xs" style="font-size: 1.6rem;">
+                        <span class="text-yellow" style="font-size: 2.2rem; margin-right: 0.2rem;">4.</span> Gusta
+                    </p>
                 </div>
             </div>
         </div>
@@ -254,31 +256,30 @@
             <!-- Products: Symmetric 50/50 Grid -->
             <div class="product-grid-symmetric mx-auto">
                 <!-- Datterino Giallo -->
-                <div class="product-float-wrap snap-item-up delay-1">
-                    <img src="giallo.png" alt="Datterino Giallo" class="product-float-img">
-                    <div class="product-card-float" style="background: var(--yellow);">
-                        <h3 class="font-serif text-dark text-large font-bold">Datterino Giallo</h3>
+                <div class="product-flat-wrap snap-item-up delay-1">
+                    <img src="giallo.png" alt="Datterino Giallo" class="product-img-flat">
+                    <div class="product-card-flat" style="background: var(--yellow);">
+                        <h3 class="font-serif text-dark font-bold" style="font-size: 2rem;">Datterino Giallo</h3>
                         <p class="product-description font-serif text-dark">Mamma Cristina lo fa giallo. Voi fatevi una
                             domanda.</p>
-                        <p class="product-formats font-display text-dark text-body tracking-wider opacity-70 uppercase">
-                            Formati: 200g / 300g</p>
-                        <p class="product-price font-serif text-red text-body font-bold">a partire da € 8,50</p>
-                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp-brand">ORDINALO</a>
+                        <p class="product-formats font-display text-dark text-body tracking-wider uppercase font-bold">
+                            FORMATI: 200G / 300G</p>
+                        <p class="product-price font-serif text-dark text-body font-bold" style="margin-bottom: 2rem;">a partire da € 8,50</p>
+                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp-brand" style="background-color: #178e47; color: white;">ORDINALO</a>
                     </div>
                 </div>
 
                 <!-- Sugo Rosso -->
-                <div class="product-float-wrap snap-item-up delay-2">
-                    <img src="Rosso.png" alt="Sugo Rosso" class="product-float-img">
-                    <div class="product-card-float" style="background: var(--red);">
-                        <h3 class="font-serif text-white text-large font-bold">Sugo Rosso</h3>
+                <div class="product-flat-wrap snap-item-up delay-2">
+                    <img src="rosso.png" alt="Sugo Rosso" class="product-img-flat">
+                    <div class="product-card-flat" style="background: var(--red);">
+                        <h3 class="font-serif text-white font-bold" style="font-size: 2rem;">Sugo Rosso</h3>
                         <p class="product-description font-serif text-white">Quello classico. Quello per cui si fa la
                             scarpetta.</p>
-                        <p
-                            class="product-formats font-display text-white text-body tracking-wider opacity-70 uppercase">
-                            Formati: 200g / 300g</p>
-                        <p class="product-price font-serif text-yellow text-body font-bold">a partire da € 8,50</p>
-                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp-brand">ORDINALO</a>
+                        <p class="product-formats font-display text-white text-body tracking-wider uppercase font-bold">
+                            FORMATI: 200G / 300G</p>
+                        <p class="product-price font-serif text-white text-body font-bold" style="margin-bottom: 2rem;">a partire da € 8,50</p>
+                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp-brand" style="background-color: #178e47; color: white;">ORDINALO</a>
                     </div>
                 </div>
             </div>
@@ -293,12 +294,12 @@
             <h2 class="font-display text-white text-section uppercase mb-lg text-center snap-item-up">LE <span
                     class="text-yellow">PROMOZIONI</span></h2>
 
-            <div class="grid-1 gap-lg max-w-lg mx-auto flex flex-col">
+            <div class="grid-1 gap-md max-w-lg mx-auto flex flex-col">
                 <!-- Welcome Pack -->
                 <div
                     class="promo-card bg-cream border-red-thick p-lg relative snap-item-up delay-1 drop-shadow-solid flex align-center gap-lg justify-between flex-wrap">
                     <div class="flex-shrink-0 mx-auto">
-                        <img src="welcome_pack.png"
+                        <img src="Pack_di_Benvenuto.png"
                             onerror="this.src='https://via.placeholder.com/250x150/E6392F/FFF?text=WELCOME+PACK'"
                             alt="Welcome Pack" class="drop-shadow-xl"
                             style="height: 150px; width: auto; object-fit: contain;">
@@ -312,14 +313,9 @@
                     <div
                         class="promo-action text-center flex-shrink-0 flex flex-col align-center justify-center mx-auto">
                         <span class="font-serif text-dark text-large mb-sm block font-bold">€ 25,00</span>
-                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp">ORDINALO</a>
+                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp">ORDINALO</a>
                     </div>
                 </div>
-
-                <!-- Dispensa -->
-                <h4
-                    class="font-display text-white text-center text-body tracking-wider mt-xl mb-md uppercase opacity-70">
-                    LA DISPENSA</h4>
 
                 <!-- Cartone -->
                 <div
@@ -339,7 +335,7 @@
                     <div
                         class="promo-action text-center flex-shrink-0 flex flex-col align-center justify-center mx-auto">
                         <span class="font-serif text-dark text-large mb-sm block font-bold">€ 159,00</span>
-                        <a href="https://wa.me/..." target="_blank" class="btn btn-whatsapp">ORDINALO</a>
+                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp">ORDINALO</a>
                     </div>
                 </div>
             </div>

@@ -1043,15 +1043,17 @@ body {
     padding: 0 1rem;
 }
 
-.step-number-decor {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: clamp(4rem, 8vw, 7rem);
-    color: var(--red);
-    opacity: 0.3;
-    line-height: 1;
-    margin-bottom: -1rem;
+.step-icon {
+    height: 240px;
+    width: auto;
+    object-fit: contain;
+    margin: 0 auto 0.5rem;
     display: block;
+    position: relative;
+    z-index: 10;
 }
+
+
 
 .step-connector {
     flex-shrink: 0;
@@ -1074,12 +1076,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4.5rem;
-    /* Even more horizontal space for "respiro" */
     align-items: stretch;
     padding-top: 20px;
-    /* Minimal padding for ultra-tight layout */
     max-width: 1200px;
-    /* Increased to fit the 533px jars + gap without overflow */
     margin: 0 auto;
     width: 100%;
 }
@@ -1145,7 +1144,7 @@ body {
 }
 
 .product-card-float .product-price {
-    margin-bottom: 2rem;product-card
+    margin-bottom: 2rem;
     min-height: 1.5rem;
     display: flex;
     align-items: center;
@@ -1208,4 +1207,69 @@ body {
         grid-template-columns: 1fr;
         gap: 6rem;
     }
+}
+
+/* Flat Product Card UI */
+.product-flat-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.product-img-flat {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.product-card-flat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.product-card-flat h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    font-size: 2rem;
+}
+
+.product-card-flat .btn-whatsapp-brand {
+    margin-top: auto;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 54px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+/* 16:11 Section Util */
+.section-16-11 {
+    aspect-ratio: 16 / 11;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0; /* increased padding for more breathing room */
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.h-full {
+    height: 100%;
 }
