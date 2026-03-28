@@ -45,3 +45,11 @@ document.querySelectorAll('section').forEach(sec => {
   sec.classList.add('fade-in');
   observer.observe(sec);
 });
+
+// Mobile tab bar active state
+document.querySelectorAll('.mobile-tab-bar .tab-item').forEach(tab => {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.mobile-tab-bar .tab-item').forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
