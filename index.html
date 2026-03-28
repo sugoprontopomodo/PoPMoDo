@@ -92,33 +92,33 @@
       <!-- Pomodoro San Marzano – rosso -->
       <div class="ingredient-card">
         <img src="PRIng.png" alt="Pomodoro San Marzano" class="ing-image" />
-        <h3><span>POMODORO <br class="desk-br"> SAN MARZANO</span></h3>
+        <h3><span class="mobile-hide-text">POMODORO <br class="desk-br"></span> SAN MARZANO</h3>
         <p>Il cuore dolce della nostra salsa, maturati al sole.</p>
       </div>
 
       <!-- Pomodoro Datterino Giallo – giallo -->
       <div class="ingredient-card">
         <img src="DGIng.png" alt="Pomodoro Datterino Giallo" class="ing-image" />
-        <h3><span>POMODORO <br class="desk-br"> DATTERINO GIALLO</span></h3>
+        <h3><span class="mobile-hide-text">POMODORO <br class="desk-br"></span> DATTERINO GIALLO</h3>
         <p>Dolcezza intensa e colore solare, tutto in un morso.</p>
       </div>
 
       <!-- Basilico – verde -->
-      <div class="ingredient-card">
+      <div class="ingredient-card mobile-hide-card">
         <img src="BAing.png" alt="Basilico" class="ing-image" />
         <h3><span>BASILICO</span></h3>
         <p>Profumo intenso e aroma mediterraneo.</p>
       </div>
 
       <!-- Olio – oro -->
-      <div class="ingredient-card">
+      <div class="ingredient-card mobile-hide-card">
         <img src="OLing.png" alt="Olio" class="ing-image" />
         <h3><span>OLIO</span></h3>
         <p>Oro liquido per un gusto ricco e vellutato.</p>
       </div>
 
       <!-- Cipolla Rossa – viola -->
-      <div class="ingredient-card">
+      <div class="ingredient-card mobile-hide-card">
         <img src="CiING.png" alt="Cipolla Rossa" class="ing-image" />
         <h3><span>CIPOLLA <br class="desk-br"> ROSSA</span></h3>
         <p>Dolcezza e carattere, l'anima segreta del sugo.</p>
@@ -301,10 +301,22 @@
 
   <!-- ===================== MOBILE TAB BAR ===================== -->
   <nav class="mobile-tab-bar">
-    <a href="#prodotti" class="tab-item">Prodotti</a>
-    <a href="#promozioni" class="tab-item">Promo</a>
-    <a href="#chi-siamo" class="tab-item">Chi siamo</a>
-    <a href="https://wa.me/393201836065" target="_blank" class="tab-item tab-cta">Ordina</a>
+    <a href="#prodotti" class="tab-item active">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+      <span>Prodotti</span>
+    </a>
+    <a href="#promozioni" class="tab-item">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+      <span>Promozioni</span>
+    </a>
+    <a href="#chi-siamo" class="tab-item">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+      <span>Chi siamo</span>
+    </a>
+    <a href="https://wa.me/393201836065" target="_blank" class="tab-item">
+      <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Contattaci</span>
+    </a>
   </nav>
 
   <script src="main.js"></script>
