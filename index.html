@@ -1,400 +1,304 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PO MO DO | La Tradizione, Ma Pop</title>
-
-    <!-- Google Fonts: Bebas Neue for Macro Display, Playfair for Serif Body -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="fav_icon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PO MO DO – Sugo Pronto di Mamma Cristina</title>
+  <meta name="description" content="PO MO DO è il sugo di Mamma Cristina: pomodori suoi, ricetta sua. Solo ingredienti veri dalla Lucania." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body class="bg-red">
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">
+      <img src="logo.png" alt="PO MO DO Logo" />
+      <div class="logo-text">
+        <span>SUGO PRONTO</span>
+        <span>DI MAMMA CRISTINA</span>
+      </div>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#ingredienti">Ingredienti</a></li>
+      <li><a href="#come-si-usa">Come si Usa</a></li>
+      <li><a href="#prodotti">Prodotti</a></li>
+      <li><a href="#promozioni">Promozioni</a></li>
+      <li><a href="#chi-siamo">Chi siamo</a></li>
+      <li><a href="https://wa.me/393201836065" target="_blank" class="nav-cta">Ordina ora</a></li>
+    </ul>
+  </nav>
 
-    <!-- Halftone Texture Overlay (Fixed) -->
-    <div class="global-halftone"></div>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <!-- Vector decorations -->
+    <div class="memphis hero-memphis">
+      <img src="Linee zig zag in alto a sinistra.svg" class="deco deco-zz-alto-sx" alt="" />
+      <img src="Linee zig zag in basso a sinistra.svg" class="deco deco-zz-basso-sx" alt="" />
+      <img src="Linee zig zag a destra.svg" class="deco deco-zz-dx" alt="" />
+      
+      <img src="Cerchio piccolo a sinistra.svg" class="deco deco-cerchio-piccolo-sx" alt="" />
+      <img src="Coppia di cerchi centrale.svg" class="deco deco-coppia-cerchi" alt="" />
+      
+      <img src="X White.svg" class="deco deco-x-white-1" alt="" />
+      <img src="X White_2.svg" class="deco deco-x-white-2" alt="" />
+      <img src="X Yellow.svg" class="deco deco-x-yellow" alt="" />
+      
+      <img src="White Triangle.svg" class="deco deco-tri-white" alt="" />
+      <img src="Yellow Triangle.svg" class="deco deco-tri-yellow" alt="" />
+      <img src="White Line triangle.svg" class="deco deco-tri-w-line" alt="" />
+      <img src="Yellow Line Triangle.svg" class="deco deco-tri-y-line" alt="" />
+    </div>
 
-    <!-- Solid Red Navbar -->
-    <nav class="navbar relative z-50 flex justify-between align-center pad-x py-md bg-red border-bottom-yellow">
-        <!-- Center Logo Container -->
-        <a href="#" class="brand-logo absolute text-decoration-none" style="left: 50%; transform: translateX(-50%);">
-            <img src="logo.png" alt="PO MO DO Logo" style="height: 60px; width: auto;">
-        </a>
-        <!-- Empty left spacer to balance flex -->
-        <div class="nav-spacer hidden-mobile" style="width: 100px;"></div>
-        <!-- Links -->
-        <div class="nav-links hidden-mobile flex gap-md align-center font-display text-nav tracking-wider"
-            style="margin-left: auto;">
-            <a href="#chi-siamo" class="text-white hover-yellow text-decoration-none transition-color uppercase">Chi
-                Siamo</a>
-            <a href="#ingredienti" class="text-white hover-yellow text-decoration-none transition-color uppercase">Ingredienti</a>
-            <a href="#prodotti" class="text-white hover-yellow text-decoration-none transition-color uppercase">Prodotti</a>
-            <a href="#ordina" class="text-yellow hover-yellow text-decoration-none transition-color uppercase">Ordina
-                Ora</a>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>IL SUGO<br>DI MAMMA<br>CRISTINA.</h1>
+        <p>Pomodori suoi. Ricetta sua.<br>Niente da aggiungere forse solo un filo d'olio.</p>
+        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-yellow" id="hero-cta">PROVALO</a>
+      </div>
+      <div class="hero-image">
+        <div class="hero-jar-wrapper">
+          <img src="BKGJAR.png" alt="" class="main-jar-bkg" />
+          <img src="Jar.png" alt="Barattolo Po Mo Do" class="main-jar" />
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section (Red Background) — jar bleeds into section below -->
-    <header class="hero-section relative bg-red pt-xl pb-xxl align-center flex"
-        style="overflow-x: clip; overflow-y: visible; z-index: 10;">
-        <!-- New Animated Background Pattern -->
-        <div class="hero-bg-pattern"></div>
+  <!-- ===================== INGREDIENTI ===================== -->
+  <section class="ingredienti" id="ingredienti">
+    <!-- Memphis dots top right -->
+    <svg class="ing-deco id1" viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg"><polyline points="0,15 15,5 30,15 45,5 60,15 75,5 90,15 105,5 120,15" fill="none" stroke="#c8102e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="ing-deco id2" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg"><polyline points="0,15 15,5 30,15 45,5 60,15" fill="none" stroke="#f5c800" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="ing-deco id3" viewBox="0 0 40 35" xmlns="http://www.w3.org/2000/svg"><polygon points="20,2 38,33 2,33" fill="none" stroke="#c8102e" stroke-width="3"/></svg>
+    <svg class="ing-deco id4" viewBox="0 0 40 35" xmlns="http://www.w3.org/2000/svg"><polygon points="20,2 38,33 2,33" fill="#f5c800" stroke="none"/></svg>
+    <svg class="ing-deco id5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><line x1="2" y1="2" x2="18" y2="18" stroke="#c8102e" stroke-width="3" stroke-linecap="round"/><line x1="18" y1="2" x2="2" y2="18" stroke="#c8102e" stroke-width="3" stroke-linecap="round"/></svg>
+    <div class="deco dot ing-dot1"></div>
+    <div class="deco dot ing-dot2"></div>
 
-        <div class="container relative z-10 grid-2 gap-xl align-center hero-grid">
-            <!-- Left: Massive Typography Area -->
-            <div class="hero-text-area flex relative">
-                <!-- Massive Title Container -->
-                <div class="title-container overflow-hidden">
-                    <h1 class="font-display text-white text-hero line-height-solid uppercase animate-slide-in">
-                        Il sugo di<br>Mamma Cristina.
-                    </h1>
-                    <p class="font-serif text-white text-body mt-md max-w-sm animate-fade-in delay-2">
-                        Pomodori suoi. Ricetta sua. Niente da aggiungere<br>
-                        forse solo un filo d'olio.
-                    </p>
-                    <div class="mt-lg animate-fade-in delay-3">
-                        <a href="#prodotti" class="btn btn-yellow uppercase tracking-wider">PROVALO</a>
-                    </div>
-                </div>
-            </div>
+    <div class="huge-section-header">
+      <div class="huge-subtitle">SOLO INGREDIENTI</div>
+      <h2 class="huge-title">SEMPLICI</h2>
+      <div class="huge-desc">Quelli che potresti contare sulle dita.</div>
+    </div>
 
-            <!-- Right: Jar bleeds downward into next section -->
-            <div class="hero-image-area relative flex justify-center align-center"
-                style="margin-bottom: -150px; z-index: 20; overflow: visible;">
-                <!-- Yellow circle behind jar -->
-                <div class="absolute z-0"
-                    style="width: 320px; height: 320px; border-radius: 50%; background: #f5c842; top: -20px; right: -40px;">
-                </div>
-                <!-- Jar overflowing down into cream section -->
-                <img src="hero_jar_cutout.png" onerror="this.src='hero_jar_cutout.png'" alt="PO MO DO Jar"
-                    class="hero-jar relative z-10 animate-jar-bounce animate-jar-float drop-shadow-xl"
-                    style="transform: scale(1.28) translateY(-40px) rotate(5deg); max-height: 80vh; object-fit: contain;">
-            </div>
+    <div class="ingredienti-grid">
+
+      <!-- Pomodoro San Marzano – rosso -->
+      <div class="ingredient-card">
+        <img src="PRIng.png" alt="Pomodoro San Marzano" class="ing-image" />
+        <h3><span>POMODORO<br>SAN MARZANO</span></h3>
+        <p>Il cuore dolce della nostra salsa, maturati al sole.</p>
+      </div>
+
+      <!-- Pomodoro Datterino Giallo – giallo -->
+      <div class="ingredient-card">
+        <img src="DGing.png" alt="Pomodoro Datterino Giallo" class="ing-image" />
+        <h3><span>POMODORO<br>DATTERINO GIALLO</span></h3>
+        <p>Dolcezza intensa e colore solare, tutto in un morso.</p>
+      </div>
+
+      <!-- Basilico – verde -->
+      <div class="ingredient-card">
+        <img src="Baing.png" alt="Basilico" class="ing-image" />
+        <h3><span>BASILICO</span></h3>
+        <p>Profumo intenso e aroma mediterraneo.</p>
+      </div>
+
+      <!-- Olio – oro -->
+      <div class="ingredient-card">
+        <img src="Oling.png" alt="Olio" class="ing-image" />
+        <h3><span>OLIO</span></h3>
+        <p>Oro liquido per un gusto ricco e vellutato.</p>
+      </div>
+
+      <!-- Cipolla Rossa – viola -->
+      <div class="ingredient-card">
+        <img src="Ciing.png" alt="Cipolla Rossa" class="ing-image" />
+        <h3><span>CIPOLLA<br>ROSSA</span></h3>
+        <p>Dolcezza e carattere, l'anima segreta del sugo.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== COME SI USA ===================== -->
+  <section class="come-si-usa" id="come-si-usa">
+    <!-- Memphis decos -->
+    <svg class="csu-deco cs1" viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg"><polyline points="0,15 15,5 30,15 45,5 60,15 75,5 90,15 105,5 120,15" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"/></svg>
+    <svg class="csu-deco cs2" viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg"><polyline points="0,15 15,5 30,15 45,5 60,15 75,5 90,15 105,5 120,15" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="csu-dot dot1"></div>
+    <div class="csu-dot dot2"></div>
+    <div class="csu-dot dot3"></div>
+    <div class="csu-dot dot4"></div>
+    <div class="csu-dot dot5 yellow"></div>
+    <div class="csu-circle-out co2"></div>
+    <div class="csu-circle-out co3"></div>
+
+    <div class="csu-inner">
+      <div class="csu-header-new">
+        <div class="csu-subtitle">COME SI USA &rarr;</div>
+        <h2 class="csu-title-main">QUATTRO SEMPLICI<br><span class="yellow-text">MOSSE.</span></h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-label">Apri</div>
+          <p>Gira il tappo.<br>Senti il profumo.</p>
         </div>
-    </header>
-
-    <!-- Dal Cuore della Lucania — Polaroid & Landscape -->
-    <section id="chi-siamo" class="features-section fullbleed-section relative snap-observe"
-        style="background-image: url('BKG.webp'); padding-top: 180px; padding-bottom: 8rem; min-height: 90vh; display: flex; align-items: center;">
-        <div class="fullbleed-overlay"></div>
-
-        <div class="container relative grid-2 gap-xl align-center" style="z-index: 2;">
-            <!-- Left: Text -->
-            <div class="snap-item-left">
-                <p class="font-display text-yellow tracking-wider uppercase mb-sm"
-                    style="font-size: 1rem; opacity: 0.9; letter-spacing: 4px;">✦ &nbsp;Terra &amp; Tradizione</p>
-                <h2 class="font-display text-white uppercase line-height-solid mb-md">
-                    <span style="font-size: clamp(28px, 3.5vw, 48px); display: block; opacity: 0.75;">PALAZZO SAN
-                        GERVASIO</span>
-                    <span class="text-accent-big text-yellow" style="font-size: clamp(60px, 9vw, 130px);">PROVINCIA
-                        DI<br>POTENZA</span>
-                </h2>
-                <p class="font-serif text-white text-body max-w-md mt-md" style="opacity: 0.88; line-height: 1.75;">
-                    Non è un posto che conosci. È il posto da cui viene il sapore che ricorderai. Coltivato, lavorato,
-                    messo in barattolo. In giornata. Basta così.
-                </p>
-                <a href="https://www.instagram.com/po_mo_do/"
-                    class="btn btn-red mt-lg uppercase inline-block font-display tracking-wider" target="_blank">SEGUICI</a>
-            </div>
-
-            <!-- Right: Polaroid Frame -->
-            <div class="flex justify-center snap-item-right">
-                <div class="polaroid-frame">
-                    <img src="familiapomodo.webp" alt="Famiglia Po Mo Do">
-                </div>
-            </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-label">Scalda</div>
+          <p>2 minuti in padella.<br>Non di più.</p>
         </div>
-    </section>
-
-    <!-- Ingredienti — 2 Columns + Shared Row -->
-    <section id="ingredienti" class="ingredients-section bg-cream relative py-xxl snap-observe" style="overflow: hidden;">
-        <!-- New Background Pattern -->
-        <div class="bg-pattern-tomato"></div>
-
-
-        <div class="container relative z-10">
-            <div class="mb-xl text-center snap-item-up">
-                <h2 class="font-display text-red uppercase line-height-solid">
-                    <span
-                        style="font-size: clamp(16px, 2.5vw, 30px); display: block; opacity: 0.55; letter-spacing: 6px;">SOLO
-                        INGREDIENTI</span>
-                    <span class="text-accent-big">SEMPLICI</span>
-                    <span
-                        style="font-size: clamp(16px, 2.5vw, 30px); display: block; opacity: 0.75; letter-spacing: 2px; font-family: 'Playfair Display', serif; text-transform: none;">Quelli
-                        che potresti contare sulle dita.</span>
-                </h2>
-            </div>
-
-            <!-- Main Ingredients: 2 Columns Section -->
-            <div class="grid-2 ingredients-main-grid gap-xl mb-xl text-center">
-                <!-- Left: Sugo Rosso Ingredient -->
-                <div class="snap-item-left">
-                    <img src="tomato_card.png" alt="Pomodoro San Marzano"
-                        style="width: 100%; max-width: 380px; object-fit: contain;">
-                    <h3 class="font-display text-red uppercase mt-md" style="font-size: 2.2rem;"><span>POMODORO</span> SAN MARZANO
-                    </h3>
-                    <p class="font-serif text-dark opacity-70 mt-xs">Dolce. Carnoso. Fa tutto lui.</p>
-                </div>
-                <!-- Right: Datterino Giallo Ingredient -->
-                <div class="snap-item-right">
-                    <img src="tomatoG_card.png" alt="Pomodoro Datterino Giallo"
-                        style="width: 100%; max-width: 380px; object-fit: contain;">
-                    <h3 class="font-display text-red uppercase mt-md" style="font-size: 2.2rem;"><span>POMODORO</span> DATTERINO GIALLO</h3>
-                    <p class="font-serif text-dark opacity-70 mt-xs">Insolito? Sì. Ti pentirai di non averlo provato
-                        prima.</p>
-                </div>
-            </div>
-
-            <!-- Bottom Shared Row -->
-            <div class="mt-md pt-md" style="border-top: 1px solid rgba(200, 49, 42, 0.1);">
-                <h4 class="font-display text-red text-center uppercase tracking-wider mb-md"
-                    style="font-size: 1.5rem; opacity: 0.6;">In entrambi:</h4>
-                <div class="flex flex-wrap ingredients-shared-row" style="justify-content: space-evenly; align-items: flex-start; gap: 2rem;">
-                    <div class="text-center"
-                        style="flex: 0 1 180px; display: flex; flex-direction: column; align-items: center;">
-                        <img src="basil.png" alt="Basilico"
-                            style="height: 160px; width: auto; object-fit: contain; display: block;">
-                        <p class="font-display text-red uppercase" style="margin-top: 0.75rem;">Basilico</p>
-                    </div>
-                    <div class="text-center"
-                        style="flex: 0 1 180px; display: flex; flex-direction: column; align-items: center;">
-                        <img src="Oil.png" alt="Olio EVO"
-                            style="height: 160px; width: auto; object-fit: contain; display: block;">
-                        <p class="font-display text-red uppercase" style="margin-top: 0.75rem;">Olio Evo</p>
-                    </div>
-                    <div class="text-center"
-                        style="flex: 0 1 180px; display: flex; flex-direction: column; align-items: center;">
-                        <img src="Cipolla.png" alt="Cipolla Rossa"
-                            style="height: 160px; width: auto; object-fit: contain; display: block;">
-                        <p class="font-display text-red uppercase" style="margin-top: 0.75rem;">Cipolla Rossa</p>
-                    </div>
-                </div>
-            </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-label">Condisci</div>
+          <p>Pasta, bruschette,<br>quello che ti va.</p>
         </div>
-    </section>
-
-    <!-- Apri. Scalda. Gusta. — Steps Section -->
-    <section id="istruzioni" class="steps-section bg-red relative py-xxl overflow-hidden snap-observe">
-        <div class="bg-pattern-tomato"></div>
-        <div class="global-halftone" style="opacity: 0.03;"></div>
-        <span class="decor-star"
-            style="top: 10%; right: 4%; font-size: 1rem; opacity: 0.35; color: var(--cream);">✦</span>
-        <span class="decor-star" style="bottom: 18%; left: 3%; font-size: 0.7rem; opacity: 0.25;">✦</span>
-        <div class="decor-square bg-yellow" style="bottom: 25%; right: 8%; opacity: 0.18;"></div>
-
-        <div class="container relative z-10">
-            <!-- Scale-contrast title -->
-            <div class="mb-md snap-item-up">
-                <p class="font-display text-yellow tracking-wider uppercase mb-xs"
-                    style="font-size: 1rem; opacity: 1; letter-spacing: 5px;">Come si usa →</p>
-                <h2 class="font-display text-white line-height-solid uppercase">
-                    <span style="font-size: clamp(22px, 3vw, 42px); opacity: 1;">QUATTRO SEMPLICI</span>
-                    <span class="text-yellow" style="font-size: clamp(58px, 9vw, 120px); display: block;">MOSSE.</span>
-                </h2>
-            </div>
-
-            <div class="steps-row">
-                <div class="step-item snap-item-up">
-                    <span class="step-number text-yellow font-display">01</span>
-                    <p class="font-display text-white uppercase mb-xs step-title">Apri</p>
-                    <p class="step-subtext">Gira il tappo.<br>Senti il profumo.</p>
-                </div>
-                <div class="step-item snap-item-up delay-1">
-                    <span class="step-number text-yellow font-display">02</span>
-                    <p class="font-display text-white uppercase mb-xs step-title">Scalda</p>
-                    <p class="step-subtext">2 minuti in padella.<br>Non di più.</p>
-                </div>
-                <div class="step-item snap-item-up delay-2">
-                    <span class="step-number text-yellow font-display">03</span>
-                    <p class="font-display text-white uppercase mb-xs step-title">Condisci</p>
-                    <p class="step-subtext">Pasta, bruschette,<br>quello che ti va.</p>
-                </div>
-                <div class="step-item snap-item-up delay-3">
-                    <span class="step-number text-yellow font-display">04</span>
-                    <p class="font-display text-white uppercase mb-xs step-title">Gusta</p>
-                    <p class="step-subtext">Il sapore vero<br>della Lucania.</p>
-                </div>
-            </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-label">Gusta</div>
+          <p>Il sapore vero<br>della Lucania.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Prodotti — Asymmetric layout with images floating above cards -->
-    <section id="prodotti" class="products-section bg-cream relative overflow-hidden snap-observe"
-        style="padding-top: 6rem; padding-bottom: 7rem;">
+  <!-- ===================== I NOSTRI PRODOTTI ===================== -->
+  <section class="prodotti" id="prodotti">
+    <svg class="prod-deco pd1" viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg"><polyline points="0,15 15,5 30,15 45,5 60,15 75,5 90,15 105,5 120,15" fill="none" stroke="#c8102e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="prod-deco pd2" viewBox="0 0 40 35" xmlns="http://www.w3.org/2000/svg"><polygon points="20,2 38,33 2,33" fill="#f5c800" stroke="none"/></svg>
+    <svg class="prod-deco pd3" viewBox="0 0 40 35" xmlns="http://www.w3.org/2000/svg"><polygon points="20,2 38,33 2,33" fill="none" stroke="#c8102e" stroke-width="3"/></svg>
+    <div class="deco dot prod-dot1" style="background:#c8102e;"></div>
+    <div class="deco dot prod-dot2" style="background:#f5c800;"></div>
 
+    <div class="huge-section-header">
+      <div class="huge-subtitle">I NOSTRI</div>
+      <h2 class="huge-title">PRODOTTI</h2>
+    </div>
 
-        <div class="container relative z-10">
-            <!-- Scale-contrast title -->
-            <div class="mb-xl text-center snap-item-up">
-                <h2 class="font-display text-red uppercase line-height-solid">
-                    <span
-                        style="font-size: clamp(18px, 2.5vw, 34px); display: block; opacity: 0.5; letter-spacing: 6px;">I
-                        NOSTRI</span>
-                    <span class="text-accent-big">PRODOTTI</span>
-                </h2>
-                <p class="product-intro-text font-serif text-body">Scopri i nostri sughi artigianali, realizzati con
-                    pomodori selezionati e ricette della tradizione per un sapore autentico.</p>
-            </div>
+    <div class="prodotti-grid">
 
-            <!-- Products: Symmetric 50/50 Grid -->
-            <div class="product-grid-symmetric mx-auto">
-                <!-- Datterino Giallo -->
-                <div class="product-flat-wrap snap-item-up delay-1">
-                    <img src="giallo.png" alt="Datterino Giallo" class="product-img-flat">
-                    <div class="product-card-flat" style="background: var(--yellow);">
-                        <h3 class="font-serif text-dark font-bold" style="font-size: 2rem;">Datterino Giallo</h3>
-                        <p class="product-description font-serif text-dark">Mamma Cristina lo fa giallo. Voi fatevi una
-                            domanda.</p>
-                        <p class="product-formats font-display text-dark text-body tracking-wider uppercase font-bold">
-                            FORMATI: 200G / 300G</p>
-                        <p class="product-price font-serif text-dark text-body font-bold" style="margin-bottom: 2rem;">a partire da € 8,50</p>
-                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp-brand" style="background-color: #178e47; color: white;">ORDINALO</a>
-                    </div>
-                </div>
-
-                <!-- Sugo Rosso -->
-                <div class="product-flat-wrap snap-item-up delay-2">
-                    <img src="rosso.png" alt="Sugo Rosso" class="product-img-flat">
-                    <div class="product-card-flat" style="background: var(--red);">
-                        <h3 class="font-serif text-white font-bold" style="font-size: 2rem;">Sugo Rosso</h3>
-                        <p class="product-description font-serif text-white">Quello classico. Quello per cui si fa la
-                            scarpetta.</p>
-                        <p class="product-formats font-display text-white text-body tracking-wider uppercase font-bold">
-                            FORMATI: 200G / 300G</p>
-                        <p class="product-price font-serif text-white text-body font-bold" style="margin-bottom: 2rem;">a partire da € 8,50</p>
-                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp-brand" style="background-color: #178e47; color: white;">ORDINALO</a>
-                    </div>
-                </div>
-            </div>
+      <!-- Prodotto 1: San Marzano -->
+      <div class="product-card">
+        <div class="product-jar-placeholder">
+          <img src="BKGProRo.png" class="product-jar-bkg" alt="" />
+          <img src="ProRo.png" alt="Sugo San Marzano" class="product-jar-fg" />
         </div>
-    </section>
+        <h3>IL SUGO<br>SAN MARZANO</h3>
+        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-outline">ORDINA ORA</a>
+      </div>
 
-    <!-- Promozioni Section -->
-    <section id="ordina" class="promos-section bg-red relative py-xxl overflow-hidden snap-observe">
-        <div class="bg-pattern-tomato"></div>
-        <div class="global-halftone" style="opacity: 0.03"></div>
-        <div class="container relative z-10">
-            <h2 class="font-display text-white text-section uppercase mb-lg text-center snap-item-up">LE <span
-                    class="text-yellow">PROMOZIONI</span></h2>
-
-            <div class="grid-1 gap-md max-w-lg mx-auto flex flex-col">
-                <!-- Welcome Pack -->
-                <div
-                    class="promo-card bg-cream border-red-thick p-lg relative snap-item-up delay-1 drop-shadow-solid flex align-center gap-lg justify-between flex-wrap">
-                    <div class="flex-shrink-0 mx-auto">
-                        <img src="Pack_di_Benvenuto.png"
-                            onerror="this.src='https://via.placeholder.com/250x150/E6392F/FFF?text=WELCOME+PACK'"
-                            alt="Welcome Pack" class="drop-shadow-xl"
-                            style="height: 150px; width: auto; object-fit: contain;">
-                    </div>
-                    <div class="promo-info flex-grow text-center" style="flex-basis: 300px;">
-                        <p class="font-display text-red text-sm tracking-wider mb-xs uppercase">Pack Benvenuto</p>
-                        <h3 class="font-serif text-dark text-large mb-xs font-bold">Pack di Benvenuto</h3>
-                        <p class="font-serif text-dark text-body opacity-80">Per chi non ci crede ancora. Dopo, ci
-                            crede.</p>
-                    </div>
-                    <div
-                        class="promo-action text-center flex-shrink-0 flex flex-col align-center justify-center mx-auto">
-                        <span class="font-serif text-dark text-large mb-sm block font-bold">€ 25,00</span>
-                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp">ORDINALO</a>
-                    </div>
-                </div>
-
-                <!-- Cartone -->
-                <div
-                    class="promo-card bg-cream border-yellow-thick p-lg relative snap-item-up delay-2 drop-shadow-solid flex align-center gap-lg justify-between flex-wrap">
-                    <div class="flex-shrink-0 mx-auto">
-                        <img src="Box.png"
-                            onerror="this.src='https://via.placeholder.com/250x150/FFE600/111?text=CARTONE'"
-                            alt="Cartone da 23 barattoli" class="drop-shadow-xl"
-                            style="height: 150px; width: auto; object-fit: contain;">
-                    </div>
-                    <div class="promo-info flex-grow text-center" style="flex-basis: 300px;">
-                        <p class="font-display text-yellow text-sm tracking-wider mb-xs uppercase"
-                            style="filter: brightness(0.8)">La scorta di casa</p>
-                        <h3 class="font-serif text-dark text-large mb-xs font-bold">Cartone da 21 barattoli</h3>
-                        <p class="font-serif text-dark text-body opacity-80">Perché ci siamo già passati tutti.</p>
-                    </div>
-                    <div
-                        class="promo-action text-center flex-shrink-0 flex flex-col align-center justify-center mx-auto">
-                        <span class="font-serif text-dark text-large mb-sm block font-bold">€ 159,00</span>
-                        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-whatsapp">ORDINALO</a>
-                    </div>
-                </div>
-            </div>
+      <!-- Prodotto 2: Datterino Giallo -->
+      <div class="product-card">
+        <div class="product-jar-placeholder">
+          <img src="BKGProGi.png" class="product-jar-bkg" alt="" />
+          <img src="ProGia.png" alt="Sugo Datterino Giallo" class="product-jar-fg" />
         </div>
-    </section>
+        <h3>IL SUGO<br>DATTERINO GIALLO</h3>
+        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-outline">ORDINA ORA</a>
+      </div>
 
-    <!-- Nessun Compromesso — Scale-contrast typography -->
-    <section class="banner-section bg-cream py-xxxl relative overflow-hidden snap-observe">
-        <div class="bg-pattern-tomato"></div>
+    </div>
+  </section>
 
-        <div class="container relative z-10 snap-item-scale">
-            <!-- Scale contrast: NESSUN small, COMPROMESSO huge -->
-            <h2 class="font-display text-red uppercase line-height-solid mb-md text-center">
-                <span style="font-size: clamp(60px, 12vw, 170px); display: block;">BASTA COSÌ.</span>
-            </h2>
+  <!-- ===================== PROMOZIONI ===================== -->
+  <section class="promozioni" id="promozioni">
+    <!-- Memphis decos -->
+    <svg class="promo-deco pr1" viewBox="0 0 120 20" xmlns="http://www.w3.org/2000/svg"><polyline points="0,15 15,5 30,15 45,5 60,15 75,5 90,15 105,5 120,15" fill="none" stroke="#f5c800" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="promo-deco pr2" viewBox="0 0 60 20" xmlns="http://www.w3.org/2000/svg"><polyline points="0,15 15,5 30,15 45,5 60,15" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="promo-deco pr3" viewBox="0 0 40 35" xmlns="http://www.w3.org/2000/svg"><polygon points="20,2 38,33 2,33" fill="none" stroke="#f5c800" stroke-width="3"/></svg>
+    <div class="promo-dot pd-a"></div>
+    <div class="promo-dot pd-b"></div>
+
+    <h2 class="section-title white">LE PROMOZIONI</h2>
+
+    <div class="promozioni-grid">
+
+      <!-- Promo 1 -->
+      <div class="promo-card">
+        <div class="promo-card-inner">
+
+          <div class="promo-content">
+            <img src="benvenuto.png" alt="Box Degustazione" class="promo-image">
+            <div class="promo-info">
+              <h3>BOX<br>DEGUSTAZIONE</h3>
+              <div class="promo-badge">
+                <div class="badge-line">OFFERTA I COSTO</div>
+                <div class="badge-discount">-20%</div>
+                <div class="badge-ship">🚚 SPEDIZIONE GRATUITA</div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-yellow-big">APPROFITTA ORA</a>
+      </div>
 
-    <!-- Footer -->
-    <footer class="bg-red text-white pt-xl pb-lg relative z-10">
-        <div class="container text-center">
-            <h2 class="brand-text text-white text-logo font-lucky mb-md">PO MO DO</h2>
-            <div class="flex justify-center gap-md font-display uppercase tracking-wider mb-lg">
-                <a href="#" class="text-white hover-yellow text-decoration-none">Instagram</a>
-                <a href="#" class="text-white hover-yellow text-decoration-none">Privacy</a>
-                <a href="#" class="text-white hover-yellow text-decoration-none">Termini</a>
+      <!-- Promo 2 -->
+      <div class="promo-card">
+        <div class="promo-card-inner">
+
+          <div class="promo-content">
+            <img src="Scorta.png" alt="Scorta di Famiglia" class="promo-image">
+            <div class="promo-info">
+              <h3>SCORTA<br>DI FAMIGLIA</h3>
+              <div class="promo-badge">
+                <div class="badge-line">OFFERTA I COSTO</div>
+                <div class="badge-discount">-20%</div>
+                <div class="badge-ship">🚚 SPEDIZIONE GRATUITA</div>
+              </div>
             </div>
-            <p class="font-serif text-sm opacity-50">© 2026 PO MO DO. Tutti i diritti riservati. Vivere Pop.</p>
+          </div>
         </div>
-    </footer>
+        <a href="https://wa.me/393201836065" target="_blank" class="btn btn-yellow-big">APPROFITTA ORA</a>
+      </div>
 
-    <!-- Mobile Tab Bar (Bottom Navigation) -->
-    <nav class="mobile-tab-bar">
-        <a href="#chi-siamo" class="tab-item">
-            <div class="tab-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
-                </svg>
-            </div>
-            <span>Chi siamo</span>
-        </a>
-        <a href="#istruzioni" class="tab-item">
-            <div class="tab-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                    <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
-                </svg>
-            </div>
-            <span>Istruzioni</span>
-        </a>
-        <a href="#prodotti" class="tab-item">
-            <div class="tab-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                    <path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z" />
-                </svg>
-            </div>
-            <span>Prodotti</span>
-        </a>
-        <a href="#ordina" class="tab-item">
-            <div class="tab-icon">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
-            </div>
-            <span>Promozioni</span>
-        </a>
-    </nav>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ===================== CHI SIAMO ===================== -->
+  <section class="chi-siamo" id="chi-siamo">
+    <div class="chi-decos">
+      <img src="X Yellow.svg" class="chi-deco chi-deco-1 rotate-slow" alt="" />
+      <img src="Linee zig zag a destra.svg" class="chi-deco chi-deco-2 rotate-slow" alt="" />
+      <img src="Yellow Triangle.svg" class="chi-deco chi-deco-3 rotate-slow" alt="" />
+    </div>
+    <div class="chi-siamo-inner">
+      <div class="chi-text">
+        <h2 class="section-title red">CHI SIAMO</h2>
+        <p>PO MO DO è il sogno della nostra famiglia lucana: l'incontro tra la cura agricola di Papà Rocco e la ricetta segreta di Mamma Cristina. Nato per accompagnare le cene universitarie di Antonio e Gianluca, questo progetto porta in un barattolo tutta l'anima della Basilicata e la premura che solo una mamma sa darti.</p>
+        <a href="https://www.instagram.com/po_mo_do/" target="_blank" rel="noopener noreferrer" class="btn btn-red">SEGUICI</a>
+      </div>
+      <div class="chi-image">
+        <img src="familiapomodo.webp" alt="La Famiglia Po Mo Do" class="chi-foto">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ORDINA ===================== -->
+  <section class="ordina" id="ordina">
+    <div class="ordina-inner">
+      <h2>PRONTO A GUSTARE<br>IL VERO SUGO?</h2>
+      <p>Ordina online e ricevilo direttamente a casa tua.</p>
+      <a href="https://wa.me/393201836065" target="_blank" class="btn btn-yellow-big">ORDINA ORA</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="logo.png" alt="PO MO DO" />
+    </div>
+    <p>© 2025 PO MO DO – Sugo Pronto di Mamma Cristina. Tutti i diritti riservati.</p>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
-
 </html>
