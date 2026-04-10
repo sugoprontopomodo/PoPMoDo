@@ -148,6 +148,21 @@ a {
   font-family: var(--font-body);
 }
 
+/* ---------- Certifications ---------- */
+.certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cert-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* =====================================================
    NAVBAR
    ===================================================== */
@@ -752,7 +767,7 @@ a {
   color: var(--yellow);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 0.95rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -948,10 +963,6 @@ a {
   pointer-events: none;
 }
 
-.product-card:hover .product-jar-fg {
-  transform: translateY(-12px) scale(1.05);
-}
-
 .product-card h3 {
   font-size: 2.2rem;
   font-weight: 900;
@@ -959,6 +970,81 @@ a {
   color: var(--dark);
   line-height: 1.2;
   letter-spacing: .03em;
+}
+
+.product-subtitle {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  margin-top: -0.5rem;
+  padding: 0 1.5rem;
+}
+
+/* Product Toggle */
+.size-toggle {
+  display: flex;
+  background: #f4f4f4;
+  border-radius: 30px;
+  padding: 4px;
+  margin: 0 auto;
+  gap: 4px;
+  position: relative;
+  z-index: 5;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.toggle-btn {
+  background: transparent;
+  border: none;
+  border-radius: 26px;
+  padding: 0.4rem 1.4rem;
+  font-family: inherit;
+  font-weight: 800;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.toggle-btn.active {
+  background: var(--yellow);
+  color: var(--dark);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.product-price-display {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--red);
+  margin-top: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.product-jar-single {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base state = 200g */
+.jar-dynamic {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: scale(0.9) translateY(0px);
+}
+
+/* Active large state = 300g */
+.jar-large-state {
+  transform: scale(1.15) translateY(-5px);
+}
+
+/* Hover effects */
+.product-card:hover .jar-dynamic {
+  transform: scale(0.95) translateY(-10px);
+}
+.product-card:hover .jar-dynamic.jar-large-state {
+  transform: scale(1.2) translateY(-15px);
 }
 
 /* =====================================================
@@ -1154,6 +1240,36 @@ a {
   color: #444;
   margin-bottom: 2rem;
   max-width: 460px;
+}
+
+.chi-socials {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: -0.5rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--red);
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(200, 16, 46, 0.3);
+  background: var(--yellow);
+  color: var(--dark);
 }
 
 .chi-foto {

@@ -59,7 +59,7 @@
     <div class="hero-content">
       <div class="hero-text">
         <h1>IL SUGO<br>DI MAMMA<br>CRISTINA.</h1>
-        <p>Pomodori suoi. Ricetta sua.<br>Niente da aggiungere forse solo un filo d'olio.</p>
+        <p>Pomodori suoi. Ricetta sua.<br>Niente da aggiungere, è già pronto.</p>
         <a href="https://wa.me/393201836065" target="_blank" class="btn btn-yellow" id="hero-cta">PROVALO</a>
       </div>
       <div class="hero-image">
@@ -84,8 +84,11 @@
 
     <div class="huge-section-header">
       <div class="huge-subtitle">SOLO INGREDIENTI</div>
-      <h2 class="huge-title">SEMPLICI</h2>
+      <h2 class="huge-title">SEMPLICI E<br>BIOLOGICI</h2>
       <div class="huge-desc">Quelli che potresti contare sulle dita.</div>
+      <div class="certifications">
+        <img src="Logo Sidel V2.png" alt="SIDEL Certificazione" class="cert-logo sidel-logo" style="margin: 0 auto;">
+      </div>
     </div>
 
     <div class="ingredienti-grid">
@@ -150,7 +153,7 @@
       <div class="steps-grid">
         <div class="step">
           <div class="step-num">01</div>
-          <div class="step-label">Apri</div>
+          <div class="step-label">Stappa</div>
           <p>Gira il tappo.<br>Senti il profumo.</p>
         </div>
         <div class="step">
@@ -166,7 +169,7 @@
         <div class="step">
           <div class="step-num">04</div>
           <div class="step-label">Gusta</div>
-          <p>Il sapore vero<br>della Lucania.</p>
+          <p>Gusta il sapore vero del<br>pomodoro e della Lucania.</p>
         </div>
       </div>
     </div>
@@ -187,23 +190,47 @@
 
     <div class="prodotti-grid">
 
-      <!-- Prodotto 1: San Marzano -->
-      <div class="product-card">
+      <!-- Prodotto 1: Sugo Rosso -->
+      <div class="product-card" data-product="rosso">
         <div class="product-jar-placeholder">
           <img src="BKGProRO.png" class="product-jar-bkg" alt="" />
-          <img src="ProRO.png" alt="Sugo San Marzano" class="product-jar-fg" />
+          <div class="product-jar-single">
+            <img src="ProRO.png" alt="Sugo Rosso BIO" class="product-jar-fg jar-dynamic jar-large-state" />
+          </div>
         </div>
-        <h3>IL SUGO<br>SAN MARZANO</h3>
+
+        <div class="size-toggle">
+          <button class="toggle-btn" data-target="rosso" data-size="200g" data-price="2.49€">200g</button>
+          <button class="toggle-btn active" data-target="rosso" data-size="300g" data-price="3.49€">300g</button>
+        </div>
+
+        <h3>IL SUGO ROSSO BIO</h3>
+        <p class="product-subtitle">Il classico che sa di casa, pronto per salvarvi dai pranzi all'ultimo momento.</p>
+        <div class="product-price-display">
+          <span class="price-val" id="price-rosso">3.49€</span>
+        </div>
         <a href="https://wa.me/393201836065" target="_blank" class="btn btn-outline">ORDINA ORA</a>
       </div>
 
-      <!-- Prodotto 2: Datterino Giallo -->
-      <div class="product-card">
+      <!-- Prodotto 2: Sugo Giallo -->
+      <div class="product-card" data-product="giallo">
         <div class="product-jar-placeholder">
           <img src="BKGProGI.png" class="product-jar-bkg" alt="" />
-          <img src="ProGia.png" alt="Sugo Datterino Giallo" class="product-jar-fg" />
+          <div class="product-jar-single">
+            <img src="ProGia.png" alt="Sugo Giallo BIO" class="product-jar-fg jar-dynamic jar-large-state" />
+          </div>
         </div>
-        <h3>IL SUGO<br>DATTERINO GIALLO</h3>
+
+        <div class="size-toggle">
+          <button class="toggle-btn" data-target="giallo" data-size="200g" data-price="3.99€">200g</button>
+          <button class="toggle-btn active" data-target="giallo" data-size="300g" data-price="4.99€">300g</button>
+        </div>
+
+        <h3>IL SUGO GIALLO BIO</h3>
+        <p class="product-subtitle">La nostra chicca. Vellutato e delicato, con la dolcezza unica del datterino giallo. I bambini ne vanno pazzi!</p>
+        <div class="product-price-display">
+          <span class="price-val" id="price-giallo">4.99€</span>
+        </div>
         <a href="https://wa.me/393201836065" target="_blank" class="btn btn-outline">ORDINA ORA</a>
       </div>
 
@@ -233,7 +260,7 @@
               <h3>BOX<br>DEGUSTAZIONE</h3>
               <div class="promo-badge">
                 <div class="badge-line">PACCHETTO RISPARMIO</div>
-                <div class="badge-discount">-10%</div>
+                <div class="badge-text" style="font-size: 1.1rem; font-weight: 800; color: var(--dark); margin-top: 5px;">🚚 SPEDIZIONE<br>GRATUITA</div>
               </div>
             </div>
           </div>
@@ -251,8 +278,7 @@
               <h3>SCORTA<br>DI FAMIGLIA</h3>
               <div class="promo-badge">
                 <div class="badge-line">SCONTO QUANTITÀ</div>
-                <div class="badge-discount">-20%</div>
-                <div class="badge-ship">🚚 SPEDIZIONE GRATUITA</div>
+                <div class="badge-text" style="font-size: 1rem; font-weight: 800; color: var(--dark); margin-top: 5px;">🚚 SPEDIZIONE GRATUITA<br><span style="color: var(--red);">+ 10% di sconto sul totale</span></div>
               </div>
             </div>
           </div>
@@ -273,8 +299,15 @@
     <div class="chi-siamo-inner">
       <div class="chi-text">
         <h2 class="section-title red">CHI SIAMO</h2>
-        <p>PO MO DO è il sogno della nostra famiglia lucana: l'incontro tra la cura agricola di Papà Rocco e la ricetta segreta di Mamma Cristina. Nato per accompagnare le cene universitarie di Antonio e Gianluca, questo progetto porta in un barattolo tutta l'anima della Basilicata e la premura che solo una mamma sa darti.</p>
-        <a href="https://www.instagram.com/po_mo_do/" target="_blank" rel="noopener noreferrer" class="btn btn-red">SEGUICI</a>
+        <p>PO MO DO è il sogno della nostra famiglia lucana: l'incontro tra la cura agricola di Papà Rocco e la ricetta segreta di Mamma Cristina. Nato per accompagnare le cene universitarie di Antonio e Gianluca, questo progetto porta in un barattolo tutta l'anima della Basilicata e la premura che solo una mamma sa darti.<br><br><b>Seguici sui nostri social!</b></p>
+        <div class="chi-socials">
+          <a href="https://www.instagram.com/po_mo_do/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/Pomodo.sugopronto" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
       </div>
       <div class="chi-image">
         <img src="familiapomodo.webp" alt="La Famiglia Po Mo Do" class="chi-foto">
