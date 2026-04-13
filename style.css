@@ -1542,6 +1542,10 @@ a {
   }
 
   /* Ingredienti */
+  .id1, .id2 {
+    display: none;
+  }
+  
   .ingredienti-grid {
     gap: 1.6rem;
   }
