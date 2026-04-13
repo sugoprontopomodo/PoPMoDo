@@ -3,6 +3,16 @@
    ===================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@900&family=Plus+Jakarta+Sans:wght@400;700;800&display=swap');
 
+@font-face {
+  font-family: 'Lucky Food';
+  src: url('Lucky Food.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lucky-font {
+  font-family: 'Lucky Food', var(--font-title) !important;
+}
 /* ---------- Reset & Base ---------- */
 *,
 *::before,
@@ -940,6 +950,7 @@ a {
   margin-top: 60px;
   /* Overlaps the circle */
 }
+
 
 .product-jar-fg {
   width: 100%;
