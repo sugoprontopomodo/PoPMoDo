@@ -1541,9 +1541,15 @@ a {
     top: 68%;
   }
 
-  /* Ingredienti */
-  .id1, .id2 {
-    display: none;
+  /* Hide zig-zags on mobile */
+  .id1, .id2,
+  .cs1, .cs2,
+  .pd1,
+  .pr1, .pr2,
+  .deco-zz-alto-sx,
+  .deco-zz-basso-sx,
+  .deco-zz-dx {
+    display: none !important;
   }
   
   .ingredienti-grid {
