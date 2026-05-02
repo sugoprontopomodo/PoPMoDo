@@ -10,13 +10,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="fav_icon.png" />
+  <!-- Preload immagine hero (LCP) -->
+  <link rel="preload" as="image" href="Jar.webp" type="image/webp" fetchpriority="high" />
 </head>
 <body>
 
   <!-- ===================== NAVBAR ===================== -->
   <nav class="navbar" id="navbar">
     <a href="#hero" class="nav-logo">
-      <img src="logo.png" alt="PO MO DO Logo" />
+      <picture>
+        <source srcset="logo.webp" type="image/webp" />
+        <img src="logo.png" alt="PO MO DO Logo" loading="eager" />
+      </picture>
       <div class="logo-text">
         <span>SUGO PRONTO</span>
         <span>DI MAMMA CRISTINA</span>
@@ -64,8 +69,14 @@
       </div>
       <div class="hero-image">
         <div class="hero-jar-wrapper">
-          <img src="BKGJAR.png" alt="" class="main-jar-bkg" />
-          <img src="Jar.png" alt="Barattolo Po Mo Do" class="main-jar" />
+          <picture>
+            <source srcset="BKGJAR.webp" type="image/webp" />
+            <img src="BKGJAR.png" alt="" class="main-jar-bkg" loading="eager" />
+          </picture>
+          <picture>
+            <source srcset="Jar.webp" type="image/webp" />
+            <img src="Jar.png" alt="Barattolo Po Mo Do" class="main-jar" loading="eager" fetchpriority="high" />
+          </picture>
         </div>
       </div>
     </div>
@@ -93,35 +104,50 @@
 
       <!-- Pomodoro San Marzano – rosso -->
       <div class="ingredient-card">
-        <img src="PRIng.png" alt="Pomodoro San Marzano" class="ing-image" />
+        <picture>
+          <source srcset="PRIng.webp" type="image/webp" />
+          <img src="PRIng.png" alt="Pomodoro San Marzano" class="ing-image" loading="lazy" />
+        </picture>
         <h3><span>SAN MARZANO</span></h3>
         <p>Il cuore dolce della nostra salsa, maturati al sole.</p>
       </div>
 
       <!-- Pomodoro Datterino Giallo – giallo -->
       <div class="ingredient-card">
-        <img src="DGIng.png" alt="Pomodoro Datterino Giallo" class="ing-image" />
+        <picture>
+          <source srcset="DGIng.webp" type="image/webp" />
+          <img src="DGIng.png" alt="Pomodoro Datterino Giallo" class="ing-image" loading="lazy" />
+        </picture>
         <h3><span>DATTERINO GIALLO</span></h3>
         <p>Dolcezza intensa e colore solare, tutto in un morso.</p>
       </div>
 
       <!-- Basilico – verde -->
       <div class="ingredient-card">
-        <img src="BAing.png" alt="Basilico" class="ing-image" />
+        <picture>
+          <source srcset="BAing.webp" type="image/webp" />
+          <img src="BAing.png" alt="Basilico" class="ing-image" loading="lazy" />
+        </picture>
         <h3><span>BASILICO</span></h3>
         <p>Profumo intenso e aroma mediterraneo.</p>
       </div>
 
       <!-- Olio – oro -->
       <div class="ingredient-card">
-        <img src="OLing.png" alt="Olio" class="ing-image" />
+        <picture>
+          <source srcset="OLing.webp" type="image/webp" />
+          <img src="OLing.png" alt="Olio" class="ing-image" loading="lazy" />
+        </picture>
         <h3><span>OLIO</span></h3>
         <p>Oro liquido per un gusto ricco e vellutato.</p>
       </div>
 
       <!-- Cipolla Rossa – viola -->
       <div class="ingredient-card">
-        <img src="CiING.png" alt="Cipolla Rossa" class="ing-image" />
+        <picture>
+          <source srcset="CiING.webp" type="image/webp" />
+          <img src="CiING.png" alt="Cipolla Rossa" class="ing-image" loading="lazy" />
+        </picture>
         <h3><span>CIPOLLA <br class="desk-br"> ROSSA</span></h3>
         <p>Dolcezza e carattere, l'anima segreta del sugo.</p>
       </div>
@@ -192,9 +218,15 @@
       <!-- Prodotto 1: Sugo Rosso -->
       <div class="product-card" data-product="rosso">
         <div class="product-jar-placeholder">
-          <img src="BKGProRO.png" class="product-jar-bkg" alt="" />
+          <picture>
+            <source srcset="BKGProRO.webp" type="image/webp" />
+            <img src="BKGProRO.png" class="product-jar-bkg" alt="" loading="lazy" />
+          </picture>
           <div class="product-jar-single">
-            <img src="ProRO.png" alt="Sugo Rosso BIO" class="product-jar-fg jar-dynamic jar-large-state" />
+            <picture>
+              <source srcset="ProRO.webp" type="image/webp" />
+              <img src="ProRO.png" alt="Sugo Rosso BIO" class="product-jar-fg jar-dynamic jar-large-state" loading="lazy" />
+            </picture>
           </div>
         </div>
 
@@ -214,9 +246,15 @@
       <!-- Prodotto 2: Sugo Giallo -->
       <div class="product-card" data-product="giallo">
         <div class="product-jar-placeholder">
-          <img src="BKGProGI.png" class="product-jar-bkg" alt="" />
+          <picture>
+            <source srcset="BKGProGI.webp" type="image/webp" />
+            <img src="BKGProGI.png" class="product-jar-bkg" alt="" loading="lazy" />
+          </picture>
           <div class="product-jar-single">
-            <img src="ProGia.png" alt="Sugo Giallo BIO" class="product-jar-fg jar-dynamic jar-large-state" />
+            <picture>
+              <source srcset="ProGia.webp" type="image/webp" />
+              <img src="ProGia.png" alt="Sugo Giallo BIO" class="product-jar-fg jar-dynamic jar-large-state" loading="lazy" />
+            </picture>
           </div>
         </div>
 
@@ -254,7 +292,10 @@
         <div class="promo-card-inner">
 
           <div class="promo-content">
-            <img src="benvenuto.png" alt="Box Degustazione" class="promo-image">
+            <picture>
+              <source srcset="benvenuto.webp" type="image/webp" />
+              <img src="benvenuto.png" alt="Box Degustazione" class="promo-image" loading="lazy" />
+            </picture>
             <div class="promo-info">
               <h3>BOX<br>DEGUSTAZIONE</h3>
               <div class="promo-badge">
@@ -272,7 +313,10 @@
         <div class="promo-card-inner">
 
           <div class="promo-content">
-            <img src="Scorta.png" alt="Scorta di Famiglia" class="promo-image">
+            <picture>
+              <source srcset="Scorta.webp" type="image/webp" />
+              <img src="Scorta.png" alt="Scorta di Famiglia" class="promo-image" loading="lazy" />
+            </picture>
             <div class="promo-info">
               <h3>SCORTA<br>DI FAMIGLIA</h3>
               <div class="promo-badge">
@@ -326,7 +370,10 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="footer-logo">
-      <img src="logo.png" alt="PO MO DO" />
+      <picture>
+        <source srcset="logo.webp" type="image/webp" />
+        <img src="logo.png" alt="PO MO DO" loading="lazy" />
+      </picture>
     </div>
     <p>© 2025 PO MO DO – Sugo Pronto di Mamma Cristina. Tutti i diritti riservati.</p>
   </footer>
